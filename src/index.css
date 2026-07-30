@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+#root {
+  background: #fcf8f5;
+}
+@theme {
+  --color-primary: #c73b0f;
+  --color-black-900: #260f08;
+  --color-brown-900: #87635a;
+  --color-brown-800: #ad8985;
+  --radius-default: 12px;
+}
+button {
+  cursor: pointer;
+}
