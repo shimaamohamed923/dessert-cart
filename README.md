@@ -67,9 +67,7 @@ src/
 
 ## Live Demo
 
-<p align="center">
-  <video src="screenshots/demo..mp4" width="150px" />
-</p>
+[![Watch Demo](./screenshots/home.png)](./demo.mp4)
 
 ## Acknowledgements
 
