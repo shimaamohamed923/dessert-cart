@@ -67,7 +67,7 @@ src/
 
 ## Live Demo
 
-[![Watch Demo](./screenshots/home.png)](./demo.mp4)
+[![Watch Demo](screenshots/active-states.jpg)](screenshots/demo.mp4)
 
 ## Acknowledgements
 
