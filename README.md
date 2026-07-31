@@ -1,6 +1,6 @@
 # Dessert Cart
 
-A responsive dessert ordering application built with **React** and **Redux Toolkit**, allowing users to browse desserts, add items to their cart, manage quantities, and confirm their order through a clean and interactive interface.
+Product List with Cart is a responsive dessert ordering application built with React, Redux Toolkit, Tailwind CSS, and Axios. Users can browse desserts, manage their cart, update quantities, and confirm their orders through a clean and intuitive interface.
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-593D88?style=for-the-badge&logo=redux&logoColor=white)
