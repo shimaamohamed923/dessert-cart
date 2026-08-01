@@ -47,6 +47,13 @@ const productsSlice = createSlice({
         state.cartList = state.cartList.filter((item) => item.productId !== productId);
       }
     },
+    removeItem(state, action) {
+      const { productId } = action.payload;
+
+      const product = state.cartList.find((p) => p.productId === productId);
+      product.quantity = 0;
+      state.cartList = state.cartList.filter((item) => item.productId !== productId);
+    },
     openModal(state) {
       state.isOpen = true;
     },
@@ -71,5 +78,6 @@ const productsSlice = createSlice({
 });
 
 // Export
-export const { addToCart, increaseQuantity, decreaseQuantity, openModal, closeModal } = productsSlice.actions; // al createslice by3ml create action l kol reducer automatic
+export const { addToCart, increaseQuantity, decreaseQuantity, removeItem, openModal, closeModal } =
+  productsSlice.actions; // al createslice by3ml create action l kol reducer automatic
 export default productsSlice.reducer; // kol slice byrg3 reducer function to update state
