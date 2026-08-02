@@ -54,6 +54,9 @@ const productsSlice = createSlice({
       product.quantity = 0;
       state.cartList = state.cartList.filter((item) => item.productId !== productId);
     },
+    clearCart(state) {
+      state.cartList = [];
+    },
     openModal(state) {
       state.isOpen = true;
     },
@@ -78,6 +81,6 @@ const productsSlice = createSlice({
 });
 
 // Export
-export const { addToCart, increaseQuantity, decreaseQuantity, removeItem, openModal, closeModal } =
+export const { addToCart, increaseQuantity, decreaseQuantity, removeItem, openModal, closeModal, clearCart } =
   productsSlice.actions; // al createslice by3ml create action l kol reducer automatic
 export default productsSlice.reducer; // kol slice byrg3 reducer function to update state

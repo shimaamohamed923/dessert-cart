@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux'
 import Modal from "react-modal";
-import { closeModal } from '../../store/products/productSlice';
+import { closeModal, clearCart } from '../../store/products/productSlice';
 
 
 export default function PopupOrderConfirmed({ cart }) {
@@ -8,6 +8,8 @@ export default function PopupOrderConfirmed({ cart }) {
     const { isOpen } = useSelector((state) => state.products);
     const handleCloseModal = () => {
         dispatch(closeModal())
+        dispatch(clearCart())
+
     }
 
     return (
